@@ -18,7 +18,8 @@
     <!--hlavička-->
     <header>
         <div class="hlavicka">
-            <img class="FOTKA_2" src="photos/FOTKA_1.png" alt="Moje foto" onmouseover="newImg(this)" onmouseout="oldImg(this)" alt="Moje cool foto">
+            <img class="FOTKA_2" src="photos/FOTKA_1.png" alt="Moje foto" onmouseover="newImg(this)"
+                onmouseout="oldImg(this)" alt="Moje cool foto">
             <div class="nadpis">
                 <h1>Anna Janíková</h1>
                 <h3>webová nadšenkyně</h3>
@@ -41,13 +42,15 @@
 
     <div class="telo_zivotopisu">
         <section id=kdo-jsem>
-            <h2><--Kdo jsem?--></h2>
+            <div class="zeleny_nadpis">
+                <h2><--Kdo jsem?--></h2>
+            
             <p>Zpravidla raději naslouchám, než mluvím. Od dějství mě baví angličtina, knížky, filmy a hry. Rozhodla
                 jsem se studovat literaturu, protožemě baví do detailu analyzovat příběhy a vymýšlet různé scénáře.
                 Příběhy jsem začala hledat i v počítačových hrách. A bylo to díky hrám, že jsem se více začala zajímat o
                 IT. Když jsem zjistila, že mě knížky baví víc číst než vydávat, rozhodla jsem se naučit se něco nového s
                 <a href="https://www.czechitas.cz/">Czechitas.</a>
-            </p>
+            </p></div>
         </section>
         <section id=ma-prace>
             <h2><--Má práce--></h2>
@@ -97,9 +100,9 @@
                 <div class="skills js">5%</div>
             </div>
 
-            <p>PHP</p>
+            <p>React</p>
             <div class="container">
-                <div class="skills php">1%</div>
+                <div class="skills react">1%</div>
             </div>
         </section>
         <section id=portfolio>
@@ -134,14 +137,14 @@
 
     </footer>
     <script>
-        function newImg(e){
-          e.src = "photos/FOTKA_1_BRYLE.png"
+        function newImg(e) {
+            e.src = "photos/FOTKA_1_BRYLE.png"
         }
-        function oldImg(e){
-          e.src = "photos/FOTKA_1.png"
+        function oldImg(e) {
+            e.src = "photos/FOTKA_1.png"
         }
-      </script>
-      
+    </script>
+
 </body>
 
 </html>
