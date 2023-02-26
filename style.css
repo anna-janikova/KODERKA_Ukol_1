@@ -2,11 +2,12 @@
 body {
     font-family: 'Source Code Pro', monospace;
     margin: 0;
+    line-height: 1.5;
 }
 
 /*hlavicka*/
 header {
-    background-image: radial-gradient(circle, rgba(0,0,0,0.9108018207282913) 0%, rgba(0,0,0,0.4990371148459384) 50%, rgba(0,0,0,0.196516106442577) 100%), url("photos/html.png");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.9108018207282913) 0%, rgba(0, 0, 0, 0.4990371148459384) 50%, rgba(0, 0, 0, 0.196516106442577) 100%), url("photos/html.png");
     margin: 0;
     color: white;
 
@@ -14,22 +15,30 @@ header {
 
 .hlavicka {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    position:relative
+    padding-top: 2%;
 }
 
 .FOTKA_2 {
     width: 15%;
     border-radius: 50%;
-    border: 10px solid rgb(86, 177, 207)
+    border: 10px solid rgb(86, 177, 207);
+    margin-bottom: -10%;
+    margin-left: 5%
 }
+
+.nadpis {
+    padding-left: 5%;
+}
+
+/*menu*/
 .menu {
     display: flex;
     justify-content: center;
     background-color: #333;
 }
-    
+
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -47,25 +56,116 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+    transition: 0.3s;
+
 }
 
 li a:hover {
     background-color: #525252;
-   
-}
 
+}
 
 
 /*tělíčko*/
 
 .telo_zivotopisu {
-    margin: 0 20%;
+    margin: 5% 20%;
 
 }
 
+.telo_zivotopisu p {
+    padding-left: 3%;
+
+}
+
+/* Make sure that padding behaves as expected */
+* {
+    box-sizing: border-box
+}
+
+/* Container for skill bars */
+.container {
+    width: 50%;
+    height: 30px;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+    border-radius: 30px;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 00px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+    
+}
+
+.html {
+    height: 30px;
+    width: 20%;
+    background-color: rgb(221, 145, 79);
+    border-radius: 30px;
+  
+}
+
+
+/* Green */
+.css {
+    height: 30px;
+    width: 20%;
+    background-color: rgb(27, 114, 27);
+    border-radius: 30px;
+    
+}
+
+/* Blue */
+.js {
+    height: 30px;
+    width: 5%;
+    background-color: rgb(182, 49, 182);
+    border-radius: 30px;
+    
+}
+
+/* Red */
+.react {
+    height: 30px;
+    width: 1%;
+    background-color: #808080;
+    border-radius: 30px;
+    
+}
+
+/* Dark Grey */
+
 /*patička*/
-.paticka{
+.paticka {
     background-color: #333;
+    color: rgb(221, 145, 79);
+}
+
+.linkedin,
+.mobil,
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.kontakty {
+    padding: 2% 20%;
+}
+
+.kontakty img {
+    margin-right: 5px;
+}
+
+.kontakty a {
+    text-decoration: none;
     color: rgb(221, 145, 79);
 }

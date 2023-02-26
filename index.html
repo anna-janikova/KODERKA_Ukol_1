@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/51eb864fb7.css" crossorigin="anonymous">
     </style>
 </head>
 
@@ -19,9 +18,11 @@
     <!--hlavička-->
     <header>
         <div class="hlavicka">
-            <img class="FOTKA_2" src="photos/FOTKA_1.png" alt="Moje foto">
-            <h1>Anna Janíková</h1>
-            <h3>webová nadšenkyně</h3>
+            <img class="FOTKA_2" src="photos/FOTKA_1.png" alt="Moje foto" onmouseover="newImg(this)" onmouseout="oldImg(this)" alt="Moje cool foto">
+            <div class="nadpis">
+                <h1>Anna Janíková</h1>
+                <h3>webová nadšenkyně</h3>
+            </div>
         </div>
 
 
@@ -45,7 +46,7 @@
                 jsem se studovat literaturu, protožemě baví do detailu analyzovat příběhy a vymýšlet různé scénáře.
                 Příběhy jsem začala hledat i v počítačových hrách. A bylo to díky hrám, že jsem se více začala zajímat o
                 IT. Když jsem zjistila, že mě knížky baví víc číst než vydávat, rozhodla jsem se naučit se něco nového s
-                Czechitas.
+                <a href="https://www.czechitas.cz/">Czechitas.</a>
             </p>
         </section>
         <section id=ma-prace>
@@ -61,8 +62,8 @@
             <p></p>
             <h3>Obrazová redaktorka v nakladatelství Host</h3>
             <p>V Hostu jsem měla na starost administratiní záležitosti, připravala jsem licenční smlouvy, komunikovala
-                jsem
-                se zahraničím a snažila jsem si vždy vyjednat ty nejlepší podmínky pro Host. Při překládání v rámci mé
+                jsem se zahraničím a snažila jsem si vždy vyjednat ty nejlepší podmínky pro Host. Při překládání v rámci
+                mé
                 spolupráce s překladovou redakcí jsem trénovala nejen svou znalost angličtiny, ale také time-management.
             </p>
             <h3>Lektorka angličtiny v jazkové škole</h3>
@@ -81,10 +82,25 @@
 
         <section id=dovednosti>
             <h2><--Dovednosti--></h2>
-            <p>HTML a CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">20%</div>
+            </div>
 
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">20%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills js">5%</div>
+            </div>
+
+            <p>PHP</p>
+            <div class="container">
+                <div class="skills php">1%</div>
+            </div>
         </section>
         <section id=portfolio>
             <h2><--Portfolio--></h2>
@@ -102,20 +118,30 @@
             <h3>Kontakty</h3>
             <div class="linkedin">
                 <img src="logos/linkedin.png" alt="LinkedIn - logo">
-                <p>Přidejte si mě na LinkedIn</p>
+                <p><a href="https://www.linkedin.com/in/anna-jan%C3%ADkov%C3%A1-b063a7196" target="_blank">Přidejte si
+                        mě na LinkedIn</a></p>
             </div>
             <div class="mobil">
                 <img src="logos/mobil.png" alt="Mobil - logo">
-                <p>Zavolejte.</p>
+                <p><a href="tel:123456789">Zavolejte: 123 456 789</a></p>
             </div>
             <div class="email">
                 <img src="logos/email.png" alt="Email - logo">
-                <p>Napište email.</p>
+                <p><a href="mailto: anna.janikova42@egmail.com">Napište email.</a></p>
             </div>
-                       
+
         </div>
 
     </footer>
+    <script>
+        function newImg(e){
+          e.src = "photos/FOTKA_1_BRYLE.png"
+        }
+        function oldImg(e){
+          e.src = "photos/FOTKA_1.png"
+        }
+      </script>
+      
 </body>
 
 </html>
