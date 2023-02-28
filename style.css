@@ -6,6 +6,17 @@ body {
     color: #1d1d1d;
     font-size: large
 }
+h2,
+h3{
+    padding-bottom: 20px
+}
+h2{
+    color:#008000
+}
+h3{
+    color:rgb(206, 130, 64);
+   
+}
 
 /*hlavicka*/
 header {
@@ -26,7 +37,8 @@ header {
     border-radius: 50%;
     border: 10px solid rgb(86, 177, 207);
     margin-bottom: -10%;
-    margin-left: 5%
+    margin-left: 5%;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.75);
 }
 
 .nadpis {
@@ -71,7 +83,7 @@ li a:hover {
 .cara {
     border-left: 1px solid #d4d4d4;
     margin-left: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-left: 2%
 }
 
@@ -84,6 +96,8 @@ li a:hover {
 
 .telo_zivotopisu {
     margin: 5% 20%;
+    border-left: 1px solid #d4d4d4;
+    padding-left: 1%
 
 }
 
@@ -95,7 +109,11 @@ li a:hover {
     text-decoration: none;
     color: rgb(182, 49, 182)
 }
-
+/*kdo jsem*/
+.papapackman{
+    padding-top: 20px;
+    display: none;
+}
 /*loga */
 .logo {
     margin-left: 20px;
@@ -118,6 +136,8 @@ li a:hover {
     box-sizing: border-box
 }
 
+.dovenost{
+   padding-bottom: 10%;}
 
 .container {
     width: 50%;
@@ -166,10 +186,12 @@ li a:hover {
 .tlacitko {
     font-family: 'Source Code Pro', monospace;
     padding: 15px 36px;
+    margin: 3%;
     font-size: 16px;
     color: white;
     text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5);
     background-color: rgb(221, 145, 79);
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.75);
     border: none;
     transition: 0.2s;
 }
@@ -178,12 +200,11 @@ li a:hover {
     background-color: rgb(202, 117, 42);
 }
 
-
 .gif {
-    visibility: hidden;
-    padding: 20px;
-    margin-left: 15%
+    display: none;
+    
 }
+
 
 .zprava {
     font-weight: bold;

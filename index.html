@@ -44,38 +44,43 @@
             <div class="zeleny">
                 <h2><--Kdo jsem?--></h2>
             </div>
-            <div class="cara" onmouseover="zezelenej()" onmouseout="zesedni()">
+            <div class="cara">
                 <p>Zpravidla raději naslouchám, než mluvím. Od dějství mě baví angličtina, knížky, filmy a hry.
                     Rozhodla
                     jsem se studovat literaturu, protožemě baví do detailu analyzovat příběhy a vymýšlet různé
                     scénáře.
-                    Příběhy jsem začala hledat i v počítačových hrách. A bylo to díky hrám, že jsem se více začala
+                    Příběhy jsem začala hledat i v <a onclick="gifPackman()">počítačových hrách</a>. A bylo to díky
+                    hrám, že
+                    jsem se více začala
                     zajímat o
                     IT. Když jsem zjistila, že mě knížky baví víc číst než vydávat, rozhodla jsem se naučit se něco
                     nového s
                     <a href="https://www.czechitas.cz/">Czechitas.</a>
+                <div id="packman" class=papapackman>
+                    <img src="gify/packman.gif">
+                    <p><a href="https://giphy.com/gifs/animation-arcade-26u455vzdYHYXvLGw">via GIPHY</a></p>
+                </div>
                 </p>
             </div>
 
         </section>
         <section id=ma-prace>
             <h2><--Má práce--></h2>
-            <h3>Edika</h3>
             <div class="cara">
-                <img class="logo albatros" src="photos/albatros-logo.jpg" alt="logo Albatros media">
-                <p>Na pozici redaktorky zajišťuji administrativní a organizační přípravy knih k vydání. Starám se o
-                    redakční
-                    přípravu rukopisů včetně spolupráce s externími redaktory. Zadávám výrobu e-knih a kontorluji je
-                    před
-                    vydáním. Připravuji a kompletuji materiály pro ediční plán nakladatelství.
-                    Zpracovávám výrobní harmonogramy a cenové kalkulace titulů.</p>
+                <h3>"Literární redaktorka v nakladatelství <a href="https://www.edika.cz/">Edika</a>"</h3>
+                <div class="cara">
+                    <img class="logo albatros" src="photos/albatros-logo.jpg" alt="logo Albatros media">
+                    <p>Na pozici redaktorky zajišťuji administrativní a organizační přípravy knih k vydání. Starám se o
+                        redakční přípravu rukopisů včetně spolupráce s externími redaktory. Zadávám výrobu e-knih a kontorluji je před vydáním. Připravuji a kompletuji materiály pro ediční plán nakladatelství.
+                        Zpracovávám výrobní harmonogramy a cenové kalkulace titulů.</p>
+                </div>
             </div>
         </section>
         <section id=zkusenosti>
             <h2><--Zkušenosti--></h2>
             <p></p>
             <div class="cara">
-                <h3>Obrazová redaktorka v nakladatelství Host</h3>
+                <h3>"Obrazová redaktorka v nakladatelství <a href="https://www.hostbrno.cz/">Host</a>"</h3>
                 <div class="cara">
                     <img class="logo host" src="photos/host-logo.jpg" alt="logo nakladatelství Host">
                     <p>V Hostu jsem měla na starost administratiní záležitosti, připravala jsem licenční smlouvy,
@@ -88,7 +93,7 @@
                         time-management.
                     </p>
                 </div>
-                <h3>Lektorka angličtiny v jazkové škole</h3>
+                <h3>"Lektorka angličtiny v jazkové škole <a href="https://lingua-centrum.cz/">Lingua Centrum</a>"</h3>
                 <div class="cara">
                     <img class="logo lingua" src="photos/lingua.jpg" alt="logo Lingua centrum">
                     <p>V Lingua Centurm jsem doučovala angličtinu jak děti, tak dospělé. Aby byly mé hodiny vždy co
@@ -113,22 +118,24 @@
 
         <section id=dovednosti>
             <h2><--Dovednosti--></h2>
-            <p>HTML</p>
-            <div class="container">
-                <div class="skills html">20%</div>
-            </div>
+            <div class="cara">
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skills html">20%</div>
+                </div>
 
-            <p>CSS</p>
-            <div class="container">
-                <div class="skills css">20%</div>
-            </div>
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">20%</div>
+                </div>
 
-            <p>JavaScript</p>
-            <div class="container">
-                <div class="skills js">5%</div>
+                <p>JavaScript</p>
+                <div class="container">
+                    <div class="skills js">5%</div>
+                </div>
             </div>
-
         </section>
+
         <section id=portfolio>
             <h2><--Portfolio--></h2>
             <p>Mé portfólio je k nahlédnutí po kliknutí na tlačítko níže. </p>
@@ -180,14 +187,11 @@
             var gif = document.getElementById("uzagif");
             gif.classList.toggle("gif");
         }
-        function zezelenej() {
-            var zelenyNadpis = document.querySelector(".zeleny");
-            zelenyNadpis.style.color = "rgb(27, 114, 27)"
+        function gifPackman() {
+            var gif = document.getElementById("packman");
+            gif.classList.toggle("papapackman");
         }
-        function zesedni() {
-            var sedyNadpis = document.querySelector(".zeleny");
-            sedyNadpis.style.color = "#1d1d1d"
-        }
+    
     </script>
 
 </body>
