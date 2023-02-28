@@ -9,11 +9,9 @@ body {
 
 /*hlavicka*/
 header {
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.9108018207282913) 0%, rgba(0, 0, 0, 0.4990371148459384) 50%, rgba(0, 0, 0, 0.196516106442577) 100%), url("photos/html.png");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4009978991596639) 100%, rgba(0, 0, 0, 0.196516106442577) 100%, rgba(0, 0, 0, 0.4990371148459384) 100%), url("photos/html.png");
     margin: 0;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-
+    text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5)
 }
 
 .hlavicka {
@@ -33,6 +31,8 @@ header {
 
 .nadpis {
     padding-left: 5%;
+    color: rgb(114, 215, 255);
+
 }
 
 /*menu*/
@@ -67,17 +67,18 @@ li a:hover {
     background-color: #525252;
 
 }
+
 .cara {
     border-left: 1px solid #d4d4d4;
-    margin-left: 20px;
+    margin-left: 2%;
+    padding-bottom: 10%;
+    padding-left: 2%
 }
-.zeleny_nadpis h2{
-    color:#1d1d1d;
-    transition: 0.3s
+
+.dve {
+    margin-left: 2%
 }
-.zeleny_nadpis {
-    color:rgb(0, 112, 0)
-}
+
 
 /*tělíčko*/
 
@@ -88,34 +89,49 @@ li a:hover {
 
 .telo_zivotopisu p {
     padding-left: 3%;
-
 }
 
-/* Make sure that padding behaves as expected */
+.telo_zivotopisu a {
+    text-decoration: none;
+    color: rgb(182, 49, 182)
+}
+
+/*loga */
+.logo {
+    margin-left: 20px;
+}
+
+.albatros {
+    width: 30%;
+}
+
+.host {
+    width: 15%;
+}
+
+.lingua {
+    width: 20%;
+}
+
+
 * {
     box-sizing: border-box
 }
 
-/* Container for skill bars */
+
 .container {
     width: 50%;
     height: 30px;
-    /* Full width */
     background-color: #ddd;
-    /* Grey background */
     border-radius: 30px;
 }
 
 .skills {
     text-align: right;
-    /* Right-align text */
     padding-top: 00px;
-    /* Add top padding */
     padding-bottom: 10px;
-    /* Add bottom padding */
     color: white;
-    /* White text color */
-    
+    text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5)
 }
 
 .html {
@@ -123,52 +139,63 @@ li a:hover {
     width: 20%;
     background-color: rgb(221, 145, 79);
     border-radius: 30px;
-  
+
 }
 
 
-/* Green */
+
 .css {
     height: 30px;
     width: 20%;
     background-color: rgb(27, 114, 27);
     border-radius: 30px;
-    
+
 }
 
-/* Blue */
+
 .js {
     height: 30px;
     width: 5%;
     background-color: rgb(182, 49, 182);
     border-radius: 30px;
-    
+
 }
 
-/* Red */
-.react {
-    height: 30px;
-    width: 1%;
-    background-color: #808080;
-    border-radius: 30px;
-    
-}
 
-/* Dark Grey */
 
 .tlacitko {
-    font-family:'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace;
     padding: 15px 36px;
     font-size: 16px;
     color: white;
-    background-color:rgb(221, 145, 79);
+    text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5);
+    background-color: rgb(221, 145, 79);
     border: none;
     transition: 0.2s;
 }
 
-.tlacitko:hover{
+.tlacitko:hover {
     background-color: rgb(202, 117, 42);
 }
+
+
+.gif {
+    visibility: hidden;
+    padding: 20px;
+    margin-left: 15%
+}
+
+.zprava {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.podekovani {
+    color: #808080;
+    padding-left: 3%;
+}
+
+
 /*patička*/
 .paticka {
     background-color: #333;

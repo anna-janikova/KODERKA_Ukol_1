@@ -22,7 +22,6 @@
                 onmouseout="oldImg(this)" alt="Moje cool foto">
             <div class="nadpis">
                 <h1>Anna Janíková</h1>
-                <h3>webová nadšenkyně</h3>
             </div>
         </div>
 
@@ -41,11 +40,11 @@
     <!--tělíčko-->
 
     <div class="telo_zivotopisu">
-        <section id=kdo-jsem onmouseover="zelenyNadpis(this)">
-            <div class="zeleny_nadpis">
+        <section id=kdo-jsem>
+            <div class="zeleny">
                 <h2><--Kdo jsem?--></h2>
             </div>
-            <div class="cara">
+            <div class="cara" onmouseover="zezelenej()" onmouseout="zesedni()">
                 <p>Zpravidla raději naslouchám, než mluvím. Od dějství mě baví angličtina, knížky, filmy a hry.
                     Rozhodla
                     jsem se studovat literaturu, protožemě baví do detailu analyzovat příběhy a vymýšlet různé
@@ -63,6 +62,7 @@
             <h2><--Má práce--></h2>
             <h3>Edika</h3>
             <div class="cara">
+                <img class="logo albatros" src="photos/albatros-logo.jpg" alt="logo Albatros media">
                 <p>Na pozici redaktorky zajišťuji administrativní a organizační přípravy knih k vydání. Starám se o
                     redakční
                     přípravu rukopisů včetně spolupráce s externími redaktory. Zadávám výrobu e-knih a kontorluji je
@@ -74,23 +74,27 @@
         <section id=zkusenosti>
             <h2><--Zkušenosti--></h2>
             <p></p>
-            <h3>Obrazová redaktorka v nakladatelství Host</h3>
             <div class="cara">
-                <p>V Hostu jsem měla na starost administratiní záležitosti, připravala jsem licenční smlouvy,
-                    komunikovala
-                    jsem se zahraničím a snažila jsem si vždy vyjednat ty nejlepší podmínky pro Host. Při překládání
-                    v
-                    rámci
-                    mé
-                    spolupráce s překladovou redakcí jsem trénovala nejen svou znalost angličtiny, ale také
-                    time-management.
-                </p>
-            </div>
-            <h3>Lektorka angličtiny v jazkové škole</h3>
-            <div class="cara">
-                <p>V Lingua Centurm jsem doučovala angličtinu jak děti, tak dospělé. Aby byly mé hodiny vždy co
-                    nejzábavnější,
-                    používala jsem často online nástroje výuky. </p>
+                <h3>Obrazová redaktorka v nakladatelství Host</h3>
+                <div class="cara">
+                    <img class="logo host" src="photos/host-logo.jpg" alt="logo nakladatelství Host">
+                    <p>V Hostu jsem měla na starost administratiní záležitosti, připravala jsem licenční smlouvy,
+                        komunikovala
+                        jsem se zahraničím a snažila jsem si vždy vyjednat ty nejlepší podmínky pro Host. Při překládání
+                        v
+                        rámci
+                        mé
+                        spolupráce s překladovou redakcí jsem trénovala nejen svou znalost angličtiny, ale také
+                        time-management.
+                    </p>
+                </div>
+                <h3>Lektorka angličtiny v jazkové škole</h3>
+                <div class="cara">
+                    <img class="logo lingua" src="photos/lingua.jpg" alt="logo Lingua centrum">
+                    <p>V Lingua Centurm jsem doučovala angličtinu jak děti, tak dospělé. Aby byly mé hodiny vždy co
+                        nejzábavnější,
+                        používala jsem často online nástroje výuky. </p>
+                </div>
             </div>
         </section>
         <section id=vzdelani>
@@ -124,16 +128,20 @@
                 <div class="skills js">5%</div>
             </div>
 
-            <p>React</p>
-            <div class="container">
-                <div class="skills react">1%</div>
-            </div>
         </section>
         <section id=portfolio>
             <h2><--Portfolio--></h2>
             <p>Mé portfólio je k nahlédnutí po kliknutí na tlačítko níže. </p>
-            <button class="tlacitko" type="button">Mé úžasné porfólio!</button>
-
+            <button class="tlacitko" type="button" onclick="gif()">Mé úžasné porfólio!</button>
+            <div id=uzagif class="gif">
+                <img src="gify/kodim.gif" alt="Zábavný gif">
+                <p class="zprava">Vlastně ještě žádné portfólio nemám. Tak třeba jednou...</p>
+                <div class="podekovani">"GIF od uživatele <a
+                        href="https://pixabay.com/cs/users/julientromeur-3630051/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=animation&amp;utm_content=629">Julien
+                        Tromeur</a> z&nbsp;<a
+                        href="https://pixabay.com/cs/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=animation&amp;utm_content=629">Pixabay</a>"
+                </div>
+            </div>
         </section>
     </div>
 
@@ -154,7 +162,7 @@
             </div>
             <div class="email">
                 <img src="logos/email.png" alt="Email - logo">
-                <p><a href="mailto: anna.janikova42@egmail.com">Napište email.</a></p>
+                <p><a href="mailto: anna.janikova@tovamsemtakurcitenapisu.com">Napište email.</a></p>
             </div>
 
         </div>
@@ -168,10 +176,18 @@
             e.src = "photos/FOTKA_1.png"
         }
 
-        function zelenyNadpis() {
-            document.getElementsByClassName("zelenyNadpis").style.color = "green"
+        function gif() {
+            var gif = document.getElementById("uzagif");
+            gif.classList.toggle("gif");
         }
-
+        function zezelenej() {
+            var zelenyNadpis = document.querySelector(".zeleny");
+            zelenyNadpis.style.color = "rgb(27, 114, 27)"
+        }
+        function zesedni() {
+            var sedyNadpis = document.querySelector(".zeleny");
+            sedyNadpis.style.color = "#1d1d1d"
+        }
     </script>
 
 </body>
