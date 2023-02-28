@@ -67,11 +67,15 @@ li a:hover {
     background-color: #525252;
 
 }
+.cara {
+    border-left: 1px solid #d4d4d4;
+    margin-left: 20px;
+}
 .zeleny_nadpis h2{
     color:#1d1d1d;
     transition: 0.3s
 }
-.zeleny_nadpis :hover{
+.zeleny_nadpis {
     color:rgb(0, 112, 0)
 }
 
@@ -153,6 +157,7 @@ li a:hover {
 /* Dark Grey */
 
 .tlacitko {
+    font-family:'Source Code Pro', monospace;
     padding: 15px 36px;
     font-size: 16px;
     color: white;

@@ -41,46 +41,70 @@
     <!--tělíčko-->
 
     <div class="telo_zivotopisu">
-        <section id=kdo-jsem>
+        <section id=kdo-jsem onmouseover="zelenyNadpis(this)">
             <div class="zeleny_nadpis">
                 <h2><--Kdo jsem?--></h2>
-            
-            <p>Zpravidla raději naslouchám, než mluvím. Od dějství mě baví angličtina, knížky, filmy a hry. Rozhodla
-                jsem se studovat literaturu, protožemě baví do detailu analyzovat příběhy a vymýšlet různé scénáře.
-                Příběhy jsem začala hledat i v počítačových hrách. A bylo to díky hrám, že jsem se více začala zajímat o
-                IT. Když jsem zjistila, že mě knížky baví víc číst než vydávat, rozhodla jsem se naučit se něco nového s
-                <a href="https://www.czechitas.cz/">Czechitas.</a>
-            </p></div>
+            </div>
+            <div class="cara">
+                <p>Zpravidla raději naslouchám, než mluvím. Od dějství mě baví angličtina, knížky, filmy a hry.
+                    Rozhodla
+                    jsem se studovat literaturu, protožemě baví do detailu analyzovat příběhy a vymýšlet různé
+                    scénáře.
+                    Příběhy jsem začala hledat i v počítačových hrách. A bylo to díky hrám, že jsem se více začala
+                    zajímat o
+                    IT. Když jsem zjistila, že mě knížky baví víc číst než vydávat, rozhodla jsem se naučit se něco
+                    nového s
+                    <a href="https://www.czechitas.cz/">Czechitas.</a>
+                </p>
+            </div>
+
         </section>
         <section id=ma-prace>
             <h2><--Má práce--></h2>
             <h3>Edika</h3>
-            <p>Na pozici redaktorky zajišťuji administrativní a organizační přípravy knih k vydání. Starám se o redakční
-                přípravu rukopisů včetně spolupráce s externími redaktory. Zadávám výrobu e-knih a kontorluji je před
-                vydáním. Připravuji a kompletuji materiály pro ediční plán nakladatelství.
-                Zpracovávám výrobní harmonogramy a cenové kalkulace titulů.</p>
+            <div class="cara">
+                <p>Na pozici redaktorky zajišťuji administrativní a organizační přípravy knih k vydání. Starám se o
+                    redakční
+                    přípravu rukopisů včetně spolupráce s externími redaktory. Zadávám výrobu e-knih a kontorluji je
+                    před
+                    vydáním. Připravuji a kompletuji materiály pro ediční plán nakladatelství.
+                    Zpracovávám výrobní harmonogramy a cenové kalkulace titulů.</p>
+            </div>
         </section>
         <section id=zkusenosti>
             <h2><--Zkušenosti--></h2>
             <p></p>
             <h3>Obrazová redaktorka v nakladatelství Host</h3>
-            <p>V Hostu jsem měla na starost administratiní záležitosti, připravala jsem licenční smlouvy, komunikovala
-                jsem se zahraničím a snažila jsem si vždy vyjednat ty nejlepší podmínky pro Host. Při překládání v rámci
-                mé
-                spolupráce s překladovou redakcí jsem trénovala nejen svou znalost angličtiny, ale také time-management.
-            </p>
+            <div class="cara">
+                <p>V Hostu jsem měla na starost administratiní záležitosti, připravala jsem licenční smlouvy,
+                    komunikovala
+                    jsem se zahraničím a snažila jsem si vždy vyjednat ty nejlepší podmínky pro Host. Při překládání
+                    v
+                    rámci
+                    mé
+                    spolupráce s překladovou redakcí jsem trénovala nejen svou znalost angličtiny, ale také
+                    time-management.
+                </p>
+            </div>
             <h3>Lektorka angličtiny v jazkové škole</h3>
-            <p>V Lingua Centurm jsem doučovala angličtinu jak děti, tak dospělé. Aby byly mé hodiny vždy co
-                nejzábavnější,
-                používala jsem často online nástroje výuky. </p>
+            <div class="cara">
+                <p>V Lingua Centurm jsem doučovala angličtinu jak děti, tak dospělé. Aby byly mé hodiny vždy co
+                    nejzábavnější,
+                    používala jsem často online nástroje výuky. </p>
+            </div>
         </section>
         <section id=vzdelani>
             <h2><--Vzdělání--></h2>
-            <p>Na FF MUNI jsem vystudovala magisterský dvouobor Anglický jazyk a literatura a Literatura a mezikulturní
-                komunikace.</p>
-            <p> Na bakaláři jsem studovala Anglický jazyk a literaturu. Angličtina mě vždy velmi bavila. Při studiu mě
-                provázel strach, že obor neužiji. Když jsem ale začala zajímat o IT, konečně jsem zjistila, jak můžu své
-                anglické znalosti využít.</p>
+            <div class="cara">
+                <p>Na FF MUNI jsem vystudovala magisterský dvouobor Anglický jazyk a literatura a Literatura a
+                    mezikulturní
+                    komunikace.</p>
+                <p> Na bakaláři jsem studovala Anglický jazyk a literaturu. Angličtina mě vždy velmi bavila. Při studiu
+                    mě
+                    provázel strach, že obor neužiji. Když jsem ale začala zajímat o IT, konečně jsem zjistila, jak můžu
+                    své
+                    anglické znalosti využít.</p>
+            </div>
         </section>
 
         <section id=dovednosti>
@@ -143,6 +167,11 @@
         function oldImg(e) {
             e.src = "photos/FOTKA_1.png"
         }
+
+        function zelenyNadpis() {
+            document.getElementsByClassName("zelenyNadpis").style.color = "green"
+        }
+
     </script>
 
 </body>
