@@ -10,34 +10,7 @@ h2,
 h3{
     padding-bottom: 20px
 }
-/*h2{
-    color:#008000
-}*/
 
-#kdo-jsem:has(p:hover) h2 {
-    color:#008000
-}
-#kdo-jsem:has(p:hover) h3 {
-    color:rgb(206, 130, 64);
-}
-#ma-prace:has(p:hover) h2 {
-    color:#008000
-}
-#zkusenosti:has(p:hover) h3 {
-    color:rgb(206, 130, 64);
-}
-#zkusenosti:has(p:hover) h2 {
-    color:#008000
-}
-#vzdelani:has(p:hover) h2 {
-    color:#008000
-}
-#dovednosti:has(p:hover) h2 {
-    color:#008000
-}
-#portfolio:has(p:hover) h2 {
-    color:#008000
-}
 
 /*hlavicka*/
 header {
@@ -135,6 +108,25 @@ li a:hover {
     padding-top: 20px;
     display: none;
 }
+#kdo-jsem:has(p:hover) h2 {
+    color:#008000;
+    transition: 0.3s
+}
+#kdo-jsem:has(p:hover) h3 {
+    color:rgb(206, 130, 64);
+    transition: 0.3s
+}
+
+/*ma prace*/
+#ma-prace:has(p:hover) h2 {
+    color:#008000;
+    transition: 0.3s
+}
+
+#ma-prace:has(p:hover) h3 {
+    color:rgb(206, 130, 64);
+    transition: 0.3s
+}
 /*loga */
 .logo {
     margin-left: 20px;
@@ -146,26 +138,51 @@ li a:hover {
 
 .host {
     width: 15%;
-}
+}    
 
 .lingua {
     width: 20%;
+} 
+/*zkusenosti*/       
+#zkusenosti:has(p:hover) h3 {
+    color:rgb(206, 130, 64);
+    transition: 0.3s
 }
+#zkusenosti:has(p:hover) h2 {
+    color:#008000;
+    transition: 0.3s
+}
+
+/*vzdelani*/
+#vzdelani:has(p:hover) h2 {
+    color:#008000;
+    transition: 0.3s
+}
+/*dovednosti*/
+#dovednosti:has(p:hover) h2 {
+    color:#008000;
+    transition: 0.3s
+}
+#portfolio:has(p:hover) h2 {
+    color:#008000;
+    transition: 0.3s
+}
+
 
 
 * {
     box-sizing: border-box
-}
+}    
 
 .dovenost{
-   padding-bottom: 10%;}
-
-.container {
-    width: 50%;
+    padding-bottom: 10%;} 
+    
+    .container {
+        width: 50%;
     height: 30px;
     background-color: #ddd;
     border-radius: 30px;
-}
+}    
 
 .skills {
     text-align: right;
@@ -173,14 +190,14 @@ li a:hover {
     padding-bottom: 10px;
     color: white;
     text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5)
-}
+}    
 
 .html {
     height: 30px;
     width: 20%;
     background-color: rgb(221, 145, 79);
     border-radius: 30px;
-
+    
 }
 
 
