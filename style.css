@@ -4,18 +4,39 @@ body {
     margin: 0;
     line-height: 1.5;
     color: #1d1d1d;
-    font-size: large
+    font-size: normal
 }
 h2,
 h3{
     padding-bottom: 20px
 }
-h2{
+/*h2{
+    color:#008000
+}*/
+
+#kdo-jsem:has(p:hover) h2 {
     color:#008000
 }
-h3{
+#kdo-jsem:has(p:hover) h3 {
     color:rgb(206, 130, 64);
-   
+}
+#ma-prace:has(p:hover) h2 {
+    color:#008000
+}
+#zkusenosti:has(p:hover) h3 {
+    color:rgb(206, 130, 64);
+}
+#zkusenosti:has(p:hover) h2 {
+    color:#008000
+}
+#vzdelani:has(p:hover) h2 {
+    color:#008000
+}
+#dovednosti:has(p:hover) h2 {
+    color:#008000
+}
+#portfolio:has(p:hover) h2 {
+    color:#008000
 }
 
 /*hlavicka*/
