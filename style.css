@@ -4,11 +4,12 @@ body {
     margin: 0;
     line-height: 1.5;
     color: #1d1d1d;
-    font-size: normal
+    font-size: normal;
 }
 h2,
 h3{
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    margin-left: 18px;
 }
 
 
